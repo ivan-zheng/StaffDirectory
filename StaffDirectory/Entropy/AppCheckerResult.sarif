@@ -918,6 +918,30 @@
               "message": {
                 "text": "Error occurred running rule app-InefficientDelayLoading."
               }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 6
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 6
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error occurred running rule app-InefficientDelayLoading."
+              }
             }
           ]
         }
@@ -1008,6 +1032,47 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'User Screen'.StaffGallery_1.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'User Screen'.StaffGallery_1.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "StaffTable"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "User Screen",
+                "type": "'User Screen'.StaffGallery_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Record",
+              "Table"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Manager Screen'.StaffGallery.Default"
                 }
               ],
@@ -1049,81 +1114,60 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Manager Screen'.imgNISLogo_6.Image"
+                  "fullyQualifiedName": "'User Screen'.StaffGallery_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Manager Screen'.imgNISLogo_6.Image",
+                  "fullyQualifiedName": "'User Screen'.StaffGallery_1.AccessibleLabel",
                   "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 11,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "getsitelogo"
-                  }
                 }
               },
               "properties": {
-                "member": "Image",
-                "module": "Manager Screen",
-                "type": "'Manager Screen'.imgNISLogo_6"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "getsitelogo"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'User Screen'.StaffGallery_1.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'User Screen'.StaffGallery_1.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 10,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "StaffTable"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
+                "member": "AccessibleLabel",
                 "module": "User Screen",
                 "type": "'User Screen'.StaffGallery_1"
               }
             }
           ],
           "message": {
-            "arguments": [
-              "Record",
-              "Table"
-            ],
             "id": "issue"
           },
           "properties": {
-            "level": "High"
+            "level": "Medium"
           },
-          "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
-          "ruleIndex": 1
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'User Screen'.StaffGallery_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'User Screen'.StaffGallery_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "User Screen",
+                "type": "'User Screen'.StaffGallery_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1490,19 +1534,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'User Screen'.StaffGallery_1.AccessibleLabel"
+                  "fullyQualifiedName": "ApplicatonHeader.Icon2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'User Screen'.StaffGallery_1.AccessibleLabel",
+                  "fullyQualifiedName": "ApplicatonHeader.Icon2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "User Screen",
-                "type": "'User Screen'.StaffGallery_1"
+                "module": "ApplicatonHeader",
+                "type": "ApplicatonHeader.Icon2"
               }
             }
           ],
@@ -1520,19 +1564,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'User Screen'.StaffGallery_1.TabIndex"
+                  "fullyQualifiedName": "ApplicatonHeader.Icon2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'User Screen'.StaffGallery_1.TabIndex",
+                  "fullyQualifiedName": "ApplicatonHeader.Icon2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "User Screen",
-                "type": "'User Screen'.StaffGallery_1"
+                "module": "ApplicatonHeader",
+                "type": "ApplicatonHeader.Icon2"
               }
             }
           ],
@@ -1561,6 +1605,36 @@
               },
               "properties": {
                 "member": "Logo",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.Logo_1"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Logo_1",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Logo_1",
                 "module": "App",
                 "type": "App"
               }

@@ -6,14 +6,14 @@
         Default: =StaffTable
         DelayItemLoading: =true
         Fill: =RGBA(202, 202, 202, 1)
-        Height: =587
+        Height: =513
         Items: =Search(StaffTable, Search.Text, "First Name")
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =104
+        TemplateSize: =94
         X: =18
-        Y: =45
+        Y: =140
         ZIndex: =1
 
         Image1 As image:
@@ -91,11 +91,12 @@
     Form1 As form:
         DataSource: =StaffTable
         Fill: =RGBA(219, 219, 219, 1)
-        Height: =768
+        Height: =671
         Item: =StaffGallery.Selected
         NumberOfColumns: =1
         Width: =668
         X: =680
+        Y: =96
         ZIndex: =2
 
         Company_DataCard1 As typedDataCard.textualEditCard:
@@ -731,21 +732,13 @@
         HintText: ="Search"
         Width: =640
         X: =18
-        Y: =12
+        Y: =97
         ZIndex: =6
 
     Icon1 As icon.Search:
         Height: =33
         Icon: =Icon.Search
         X: =594
-        Y: =12
+        Y: =130
         ZIndex: =7
-
-    imgNISLogo_6 As image:
-        Height: =61
-        Image: =getsitelogo
-        Width: =204
-        X: =18
-        Y: =667
-        ZIndex: =8
 

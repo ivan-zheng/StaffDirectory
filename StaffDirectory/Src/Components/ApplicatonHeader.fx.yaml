@@ -1,0 +1,34 @@
+ApplicatonHeader As CanvasComponent:
+    Fill: =RGBA(136, 160, 209, 1)
+    Height: =82
+    Width: =App.Width
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Label1 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Height: =68
+        Size: =30
+        Text: ="NIS Staff Directory"
+        Width: =733
+        X: =278
+        Y: =6
+        ZIndex: =2
+
+    Icon2 As icon.Add:
+        Icon: =Icon.Cancel
+        OnSelect: =Exit()
+        X: =1286
+        Y: =8
+        ZIndex: =3
+
+    Image3 As image:
+        Height: =78
+        Image: =logo
+        Width: =226
+        X: =25
+        Y: =1
+        ZIndex: =4
+

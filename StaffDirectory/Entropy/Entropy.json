@@ -82,7 +82,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/25/2023 15:00:07",
+  "HeaderLastSavedDateTimeUTC": "07/25/2023 15:01:07",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "77a13ace-fe30-4103-9667-ccd761a7e3e1": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/5c72687c21f14d8daf2ec610d31bd314\""
@@ -92,7 +92,7 @@
     "Logo": "4349b7e2-0211-458e-b1a7-c5db278ab169.jpg"
   },
   "LocalResourceRootPaths": {
-    "Logo": "https://docserverpwaprodwus.blob.core.windows.net/4519e5f5-ff10-4dd6-8e85-b40852dd4e3c-1/resource/Assets0Images04349b7e2-0211-458e-b1a7-c5db278ab169.jpg?sv=2018-03-28&sr=b&sig=RKoPaJi8H09HEugte12nbAnLbLA%2BTzE2jRB4%2BZCU7sY%3D&spr=https&se=2023-07-26T15%3A03%3A59Z&sp=r"
+    "Logo": "https://docserverpwaprodwus.blob.core.windows.net/1a85b713-040a-49da-9588-8444972bc21c-1/resource/Assets0Images04349b7e2-0211-458e-b1a7-c5db278ab169.jpg?sv=2018-03-28&sr=b&sig=fa329BtytbebVVOeAcqJw09fLcIcOTLicwq%2BxV4N41I%3D&spr=https&se=2023-07-26T15%3A15%3A58Z&sp=r"
   },
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
@@ -281,7 +281,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.4901107,
+    "AnalysisLoadTime": 0.4797703,
     "ControlCount": {
       "button": 5,
       "form": 1,
@@ -296,7 +296,7 @@
       "text": 10,
       "typedDataCard": 9
     },
-    "DeserializationLoadTime": 1.5565475
+    "DeserializationLoadTime": 1.7364718
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

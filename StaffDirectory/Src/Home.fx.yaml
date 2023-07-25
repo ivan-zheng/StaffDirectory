@@ -1,0 +1,45 @@
+Home As screen:
+
+    btnViewExistingPCN As button:
+        Fill: =RGBA(168, 0, 0, 1)
+        Height: =60
+        OnSelect: |-
+            =Navigate(scrPCNView,ScreenTransition.Fade, {ButtonClicked: "View"})
+        Text: ="View Existing Users (Manager & User permissions)"
+        Width: =351
+        X: =472
+        Y: =416
+        ZIndex: =1
+
+    htmlWelcomeHeader As htmlViewer:
+        AutoHeight: =true
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =137
+        HtmlText: ="<p><center><b>Welcome to the new NIS Staff Directory Application!</b></center></p>"
+        Size: =20
+        Width: =1366
+        Y: =55
+        ZIndex: =2
+
+    lblPCNHomepageHeader As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(168, 0, 0, 1)
+        Height: =55
+        Size: =20
+        Text: ="NIS Staff Directory"
+        Width: =1366
+        ZIndex: =3
+
+    btnCreateNewPCN As button:
+        Fill: =RGBA(168, 0, 0, 1)
+        Height: =57
+        OnSelect: |-
+            =Navigate(scrPCNView,ScreenTransition.Fade, {ButtonClicked: "View"})
+        Text: ="Create New User (Manager permission only)"
+        Width: =351
+        X: =472
+        Y: =332
+        ZIndex: =4
+

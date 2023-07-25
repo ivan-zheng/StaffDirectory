@@ -9047,7 +9047,14 @@
         "X",
         "Y",
         "ZIndex",
-        "Backnav",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "App.ActiveScreen",
+          "InvariantPropertyName": "Backnav",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Nav_visible",
         "HeaderTitle"
       ],
@@ -9072,7 +9079,7 @@
         {
           "Category": "Data",
           "PropertyName": "Backnav",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",

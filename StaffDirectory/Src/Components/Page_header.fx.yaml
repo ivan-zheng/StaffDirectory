@@ -26,7 +26,7 @@ Page_header As CanvasComponent:
         Height: =48
         HoverColor: =ColorFade(Color.White, 20%)
         Icon: =Icon.BackArrow
-        OnSelect: =Navigate(Page_header.Backnav)
+        OnSelect: =Navigate(Page_header.Backnav,ScreenTransition.Fade)
         Visible: =Page_header.Nav_visible
         Width: =58
         X: =1270
@@ -36,8 +36,7 @@ Page_header As CanvasComponent:
     Icon1_2 As icon.Home:
         Color: =RGBA(255, 255, 255, 1)
         Icon: =Icon.Home
-        OnSelect: |-
-            =Navigate(scrHome,ScreenTransition.Fade, {ButtonClicked: "View"})
+        OnSelect: =Navigate(Page_header.Backnav,ScreenTransition.Fade)
         X: =25
         Y: =4
         ZIndex: =4

@@ -6,14 +6,14 @@
         Default: =StaffTable
         DelayItemLoading: =true
         Fill: =RGBA(202, 202, 202, 1)
-        Height: =513
+        Height: =516
         Items: =Search(StaffTable, Search.Text, "First Name")
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =94
+        TemplateSize: =104
         X: =18
-        Y: =140
+        Y: =130
         ZIndex: =1
 
         Image1 As image:
@@ -91,12 +91,12 @@
     Form1 As form:
         DataSource: =StaffTable
         Fill: =RGBA(219, 219, 219, 1)
-        Height: =671
+        Height: =574
         Item: =StaffGallery.Selected
         NumberOfColumns: =1
         Width: =668
         X: =680
-        Y: =96
+        Y: =72
         ZIndex: =2
 
         Company_DataCard1 As typedDataCard.textualEditCard:
@@ -705,25 +705,31 @@
                 ZIndex: =4
 
     UpdateButton As button:
+        Height: =33
         OnSelect: =SubmitForm(Form1)
         Text: ="Update"
-        X: =1133
-        Y: =728
+        Width: =150
+        X: =1143
+        Y: =653
         ZIndex: =3
 
     UpdateButton_1 As button:
+        Height: =33
         OnSelect: =Remove(StaffTable, StaffGallery.Selected)
         Text: ="Remove"
-        X: =728
-        Y: =728
+        Width: =153
+        X: =711
+        Y: =653
         ZIndex: =4
 
     UpdateButton_2 As button:
+        Height: =32
         OnSelect: |-
             =Collect(StaffTable,{Company:Company.Text, 'First Name':FirstName.Text, 'Full Name':FullName.Text, 'Job Title':JobTitle.Text, 'Last Name':LastName.Text, 'Nickname/Alias':Alias.Text, Supervisor:Supervisor.Text, 'Task Order Name':TaskOrderName.Text, 'Task Order #':OrderNum.Text})
         Text: ="Add"
-        X: =934
-        Y: =728
+        Width: =152
+        X: =920
+        Y: =654
         ZIndex: =5
 
     Search As text:
@@ -732,13 +738,20 @@
         HintText: ="Search"
         Width: =640
         X: =18
-        Y: =97
+        Y: =84
         ZIndex: =6
 
     Icon1 As icon.Search:
         Height: =33
         Icon: =Icon.Search
         X: =594
-        Y: =130
+        Y: =84
         ZIndex: =7
+
+    Footer_1 As Footer:
+        Y: =686
+        ZIndex: =9
+
+    Page_header_1 As Page_header:
+        ZIndex: =10
 

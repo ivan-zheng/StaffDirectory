@@ -1,0 +1,29 @@
+Header As CanvasComponent:
+    Fill: |
+        =NIS_BLUE
+    Height: =72
+    Home: =
+    Width: |
+        =App.Width
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Label1_1 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =56
+        Size: =25
+        Text: ="HR Recruiting"
+        Width: =606
+        X: =380
+        Y: =8
+        ZIndex: =1
+
+    Icon1_1 As icon.Home:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.Home
+        OnSelect: =Navigate(Header.Home)
+        X: =12
+        ZIndex: =2
+

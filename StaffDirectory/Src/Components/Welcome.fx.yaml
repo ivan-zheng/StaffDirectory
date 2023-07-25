@@ -1,0 +1,22 @@
+Welcome As CanvasComponent:
+    Fill: =RGBA(219, 219, 219, 1)
+    Height: =120
+    Width: |
+        =App.Width
+    X: =0
+    Y: =0
+    ZIndex: =2
+
+    Label1_2 As label:
+        Align: =Align.Center
+        Height: |
+            =100
+        Size: =25
+        Text: |-
+            ="Welcome to the HR Recruiting Application.
+            Choose a form to fill out or view/edit."
+        Width: =736
+        X: =315
+        Y: =10
+        ZIndex: =1
+

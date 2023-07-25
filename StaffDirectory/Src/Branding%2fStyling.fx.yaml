@@ -1,0 +1,48 @@
+"'Branding/Styling' As screen":
+
+    NIS_RED As rectangle:
+        Fill: =RGBA(177, 31, 36, 1)
+        X: =192
+        Y: =220
+        ZIndex: =1
+
+    NIS_BLUE As rectangle:
+        Fill: =RGBA(28, 86, 127, 1)
+        X: =192
+        Y: =385
+        ZIndex: =2
+
+    SAMPLE_BUTTON As button:
+        Fill: |
+            =NIS_RED
+        Height: =30
+        Text: ="Button"
+        X: =492
+        Y: =455
+        ZIndex: =3
+
+    Label2 As label:
+        Text: |-
+            ="Red: 
+            #B11F24
+            "
+        X: =342
+        Y: =250
+        ZIndex: =4
+
+    Label2_1 As label:
+        Text: |-
+            ="Blue:
+            #1D567F"
+        X: =342
+        Y: =415
+        ZIndex: =5
+
+    NIS_LOGO As image:
+        Height: =132
+        Image: =NIS_New_2018_Logo
+        Width: =207
+        X: =822
+        Y: =353
+        ZIndex: =6
+

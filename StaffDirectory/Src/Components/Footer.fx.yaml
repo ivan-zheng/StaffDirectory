@@ -1,0 +1,45 @@
+Footer As CanvasComponent:
+    Author: ="Text"
+    AuthorEmail: ="Text"
+    Fill: =NIS_BLUE
+    Height: |+
+        =82
+        
+    LastEditDate: =Now()
+    VersionNumber: =100
+    Width: |
+        =App.Width
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Label3_2 As label:
+        Color: =Color.White
+        Height: =39
+        Size: =15
+        Text: ="If you need technical assistance with the PowerApps application itself, please contact the author."
+        Width: =985
+        Y: =8
+        ZIndex: =3
+
+    Label3_3 As label:
+        Color: =Color.White
+        Height: =27
+        Size: =14
+        Text: ="Version " & Footer.VersionNumber
+        Width: =117
+        X: =1245
+        Y: =14
+        ZIndex: =4
+
+    Label3_4 As label:
+        Color: =Color.White
+        Height: =33
+        Size: =14
+        Text: |-
+            ="Last Edited on : " & Footer.LastEditDate
+        Width: =344
+        X: =1016
+        Y: =41
+        ZIndex: =5
+

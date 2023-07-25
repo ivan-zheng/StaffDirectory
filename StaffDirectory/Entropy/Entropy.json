@@ -82,17 +82,17 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/25/2023 15:03:58",
+  "HeaderLastSavedDateTimeUTC": "07/25/2023 15:06:00",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
-    "77a13ace-fe30-4103-9667-ccd761a7e3e1": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/5c72687c21f14d8daf2ec610d31bd314\""
+    "77a13ace-fe30-4103-9667-ccd761a7e3e1": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/008ce13932604d728dd567a8301b4a5c\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
     "Logo": "4349b7e2-0211-458e-b1a7-c5db278ab169.jpg"
   },
   "LocalResourceRootPaths": {
-    "Logo": "https://docserverpwaprodwus.blob.core.windows.net/1a85b713-040a-49da-9588-8444972bc21c-1/resource/Assets0Images04349b7e2-0211-458e-b1a7-c5db278ab169.jpg?sv=2018-03-28&sr=b&sig=fa329BtytbebVVOeAcqJw09fLcIcOTLicwq%2BxV4N41I%3D&spr=https&se=2023-07-26T15%3A15%3A58Z&sp=r"
+    "Logo": "https://docserverpwaprodwus.blob.core.windows.net/5f14d00d-628e-4433-8aaa-0ecf47fd5d8e-1/resource/Assets0Images04349b7e2-0211-458e-b1a7-c5db278ab169.jpg?sv=2018-03-28&sr=b&sig=wby94CEGp2%2FTdUpwDqaf5vmI4YVzfIuxJhUdttCZzwk%3D&spr=https&se=2023-07-26T15%3A20%3A44Z&sp=r"
   },
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
@@ -281,7 +281,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.4797703,
+    "AnalysisLoadTime": 0.4965209,
     "ControlCount": {
       "button": 5,
       "form": 1,
@@ -296,7 +296,7 @@
       "text": 10,
       "typedDataCard": 9
     },
-    "DeserializationLoadTime": 1.7364718
+    "DeserializationLoadTime": 1.0718275
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

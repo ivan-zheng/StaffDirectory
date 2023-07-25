@@ -97,7 +97,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 6,
+    "BindingErrorCount": 4,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -131,9 +131,9 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Manager Screen",
-    "User Screen",
-    "scrSDHomepage",
+    "scrManager",
+    "scrUser",
+    "scrHome",
     "Branding/Styling"
   ]
 }

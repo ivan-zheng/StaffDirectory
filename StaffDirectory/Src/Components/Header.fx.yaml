@@ -23,7 +23,8 @@ Header As CanvasComponent:
     Icon1_1 As icon.Home:
         Color: =RGBA(255, 255, 255, 1)
         Icon: =Icon.Home
-        OnSelect: =Navigate(Header.Home)
+        OnSelect: |-
+            =Navigate(scrHome,ScreenTransition.Fade, {ButtonClicked: "View"})
         X: =12
         ZIndex: =2
 

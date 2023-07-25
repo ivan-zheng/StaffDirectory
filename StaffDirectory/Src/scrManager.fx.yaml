@@ -1,4 +1,4 @@
-"'Manager Screen' As screen":
+scrManager As screen:
     BackgroundImage: =
     Fill: =RGBA(116, 116, 116, 1)
 

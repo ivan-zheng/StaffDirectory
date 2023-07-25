@@ -713,8 +713,8 @@
     UpdateButton_1 As button:
         OnSelect: =Remove(StaffTable, StaffGallery.Selected)
         Text: ="Remove"
-        X: =77
-        Y: =667
+        X: =728
+        Y: =728
         ZIndex: =4
 
     UpdateButton_2 As button:

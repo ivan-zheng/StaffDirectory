@@ -1,4 +1,4 @@
-Home As screen:
+scrSDHomepage As screen:
     Fill: =RGBA(216, 223, 238, 1)
 
     btnViewExistingUser As button:

@@ -97,7 +97,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 4,
+    "BindingErrorCount": 5,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -133,6 +133,6 @@
   "ScreenOrder": [
     "Manager Screen",
     "User Screen",
-    "Home"
+    "scrSDHomepage"
   ]
 }

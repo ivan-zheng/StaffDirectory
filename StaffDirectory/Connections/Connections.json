@@ -15,10 +15,18 @@
             "tableName": "{BC1E89F5-CB41-4553-9208-26B81C1B34C2}"
           }
         }
+      },
+      "sites%252Fnitsg.sharepoint.com%252Ca95e9db8-2369-43cf-b573-a8177492d6f6%252C0daec976-7b0a-4e93-9922-8203912dd92f,b%2521uJ1eqWkjz0O1c6gXdJLW9nbJrg0Ke5NOmSKCA5Et2S9COCy6UCeyRL0vaWS8DaVu,01XXGZYWEG4UVGQFCX2VDIRLAMKILIMFCN": {
+        "dataSources": {
+          "StaffTable_1": {
+            "tableName": "{BC1E89F5-CB41-4553-9208-26B81C1B34C2}"
+          }
+        }
       }
     },
     "dataSources": [
-      "StaffTable"
+      "StaffTable",
+      "StaffTable_1"
     ],
     "dependencies": {},
     "dependents": [],

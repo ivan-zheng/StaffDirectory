@@ -1,5 +1,6 @@
 App As appinfo:
     BackEnabled: =false
+    StartScreen: =Set(varUserName, User().Name);
 
     Host As hostControl.DefaultHostControlVariant:
         OnCancel: =false

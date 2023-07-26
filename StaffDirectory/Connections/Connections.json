@@ -20,17 +20,13 @@
         "dataSources": {
           "StaffTable_1": {
             "tableName": "{BC1E89F5-CB41-4553-9208-26B81C1B34C2}"
-          },
-          "StaffTable_2": {
-            "tableName": "{BC1E89F5-CB41-4553-9208-26B81C1B34C2}"
           }
         }
       }
     },
     "dataSources": [
       "StaffTable",
-      "StaffTable_1",
-      "StaffTable_2"
+      "StaffTable_1"
     ],
     "dependencies": {},
     "dependents": [],

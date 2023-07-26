@@ -7,7 +7,7 @@ scrManager As screen:
         DelayItemLoading: =true
         Fill: =RGBA(202, 202, 202, 1)
         Height: =507
-        Items: =StaffTable_1
+        Items: =Search(StaffTable_1, Search.Text, "First Name")
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -706,26 +706,26 @@ scrManager As screen:
 
     UpdateButton As button:
         Height: =33
-        OnSelect: =SubmitForm(Form1)
+        OnSelect: =SubmitForm('Form1')
         Text: ="Update"
         Width: =150
         X: =1150
         Y: =645
         ZIndex: =3
 
-    UpdateButton_1 As button:
+    RemoveButton As button:
         Height: =33
-        OnSelect: =Remove(StaffTable, StaffGallery.Selected)
+        OnSelect: =Remove(StaffTable_1, StaffGallery.Selected)
         Text: ="Remove"
         Width: =153
         X: =721
         Y: =645
         ZIndex: =4
 
-    UpdateButton_2 As button:
+    AddButton As button:
         Height: =32
         OnSelect: |-
-            =Collect(StaffTable,{Company:Company.Text, 'First Name':FirstName.Text, 'Full Name':FullName.Text, 'Job Title':JobTitle.Text, 'Last Name':LastName.Text, 'Nickname/Alias':Alias.Text, Supervisor:Supervisor.Text, 'Task Order Name':TaskOrderName.Text, 'Task Order #':OrderNum.Text})
+            =Collect(StaffTable_1,{Company:Company.Text, 'First Name':FirstName.Text, 'Full Name':FullName.Text, 'Job Title':JobTitle.Text, 'Last Name':LastName.Text, 'Nickname/Alias':Alias.Text, Supervisor:Supervisor.Text, 'Task Order Name':TaskOrderName.Text, 'Task Order #':OrderNum.Text})
         Text: ="Add"
         Width: =152
         X: =938

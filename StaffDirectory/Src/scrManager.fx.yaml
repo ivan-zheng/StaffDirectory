@@ -7,7 +7,7 @@ scrManager As screen:
         DelayItemLoading: =true
         Fill: =RGBA(202, 202, 202, 1)
         Height: =507
-        Items: =Search(StaffTable_1, Search_1.Text,"Company")
+        Items: =Search(StaffTable_1, Search_1.Text, "First Name")
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -89,7 +89,7 @@ scrManager As screen:
             ZIndex: =6
 
     Form1 As form:
-        DataSource: =StaffTable
+        DataSource: =StaffTable_1
         Fill: =RGBA(219, 219, 219, 1)
         Height: =565
         Item: =StaffGallery.Selected
@@ -704,15 +704,6 @@ scrManager As screen:
                 Y: =DataCardKey9.Y
                 ZIndex: =4
 
-    UpdateButton As button:
-        Height: =33
-        OnSelect: =SubmitForm(Form1)
-        Text: ="Update"
-        Width: =150
-        X: =1150
-        Y: =645
-        ZIndex: =3
-
     RemoveButton As button:
         Height: =33
         OnSelect: =Remove(StaffTable_1, StaffGallery.Selected)
@@ -756,4 +747,13 @@ scrManager As screen:
     Page_header_1 As Page_header:
         Backnav: =scrHome
         ZIndex: =10
+
+    AddButton_1 As button:
+        Height: =32
+        OnSelect: =SubmitForm(Form1)
+        Text: ="Update"
+        Width: =152
+        X: =1143
+        Y: =645
+        ZIndex: =11
 

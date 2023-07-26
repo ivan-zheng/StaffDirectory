@@ -134,6 +134,7 @@
     "scrManager",
     "scrUser",
     "scrHome",
-    "Branding/Styling"
+    "Branding/Styling",
+    "ManagerScreenTest"
   ]
 }

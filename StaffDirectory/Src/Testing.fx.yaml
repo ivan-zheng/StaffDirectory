@@ -1,9 +1,0 @@
-Testing As screen:
-
-    TextInput1 As text:
-        Default: =""
-        HintText: ="Search"
-        X: =130
-        Y: =17
-        ZIndex: =4
-

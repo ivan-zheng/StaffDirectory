@@ -1854,102 +1854,6 @@
               "message": {
                 "text": "Error occurred running rule app-InefficientDelayLoading."
               }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 11
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 11
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 11
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 11
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 11
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 11
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 11
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 11
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
             }
           ]
         }
@@ -1970,7 +1874,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 46,
+                  "charOffset": 44,
                   "snippet": {
                     "text": "\"Title\""
                   }
@@ -2000,163 +1904,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Duplicate_transfer.RemoveButton_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Duplicate_transfer.RemoveButton_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 14,
-                  "charOffset": 21,
-                  "snippet": {
-                    "text": "StaffGallery_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Duplicate_transfer",
-                "type": "Duplicate_transfer.RemoveButton_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "StaffGallery_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Duplicate_transfer.RemoveButton_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Duplicate_transfer.RemoveButton_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 35,
-                  "snippet": {
-                    "text": ".Selected"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Duplicate_transfer",
-                "type": "Duplicate_transfer.RemoveButton_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Duplicate_transfer.RemoveButton_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Duplicate_transfer.RemoveButton_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 45,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "Remove(StaffTable_1, StaffGallery_1.Selected)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Duplicate_transfer",
-                "type": "Duplicate_transfer.RemoveButton_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Remove"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Duplicate_transfer.AddButton_2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Duplicate_transfer.AddButton_2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 11,
-                  "snippet": {
-                    "text": "Form1_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Duplicate_transfer",
-                "type": "Duplicate_transfer.AddButton_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Form1_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Duplicate_transfer.AddButton_3.OnSelect"
                 }
               ],
@@ -2167,7 +1914,7 @@
                 },
                 "region": {
                   "charLength": 9,
-                  "charOffset": 30,
+                  "charOffset": 38,
                   "snippet": {
                     "text": "Company_1"
                   }
@@ -2207,7 +1954,7 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 39,
+                  "charOffset": 47,
                   "snippet": {
                     "text": ".Text"
                   }
@@ -2244,7 +1991,7 @@
                 },
                 "region": {
                   "charLength": 11,
-                  "charOffset": 59,
+                  "charOffset": 67,
                   "snippet": {
                     "text": "FirstName_1"
                   }
@@ -2284,7 +2031,7 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 70,
+                  "charOffset": 78,
                   "snippet": {
                     "text": ".Text"
                   }
@@ -2321,7 +2068,7 @@
                 },
                 "region": {
                   "charLength": 10,
-                  "charOffset": 89,
+                  "charOffset": 97,
                   "snippet": {
                     "text": "FullName_1"
                   }
@@ -2361,7 +2108,7 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 99,
+                  "charOffset": 107,
                   "snippet": {
                     "text": ".Text"
                   }
@@ -2398,7 +2145,7 @@
                 },
                 "region": {
                   "charLength": 10,
-                  "charOffset": 118,
+                  "charOffset": 126,
                   "snippet": {
                     "text": "JobTitle_1"
                   }
@@ -2438,7 +2185,7 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 128,
+                  "charOffset": 136,
                   "snippet": {
                     "text": ".Text"
                   }
@@ -2475,7 +2222,7 @@
                 },
                 "region": {
                   "charLength": 10,
-                  "charOffset": 147,
+                  "charOffset": 155,
                   "snippet": {
                     "text": "LastName_1"
                   }
@@ -2515,7 +2262,7 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 157,
+                  "charOffset": 165,
                   "snippet": {
                     "text": ".Text"
                   }
@@ -2552,7 +2299,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 181,
+                  "charOffset": 189,
                   "snippet": {
                     "text": "Alias_1"
                   }
@@ -2592,7 +2339,7 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 188,
+                  "charOffset": 196,
                   "snippet": {
                     "text": ".Text"
                   }
@@ -2629,7 +2376,7 @@
                 },
                 "region": {
                   "charLength": 12,
-                  "charOffset": 206,
+                  "charOffset": 214,
                   "snippet": {
                     "text": "Supervisor_1"
                   }
@@ -2669,7 +2416,7 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 218,
+                  "charOffset": 226,
                   "snippet": {
                     "text": ".Text"
                   }
@@ -2706,7 +2453,7 @@
                 },
                 "region": {
                   "charLength": 15,
-                  "charOffset": 243,
+                  "charOffset": 251,
                   "snippet": {
                     "text": "TaskOrderName_1"
                   }
@@ -2746,7 +2493,7 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 258,
+                  "charOffset": 266,
                   "snippet": {
                     "text": ".Text"
                   }
@@ -2783,7 +2530,7 @@
                 },
                 "region": {
                   "charLength": 10,
-                  "charOffset": 280,
+                  "charOffset": 288,
                   "snippet": {
                     "text": "OrderNum_1"
                   }
@@ -2823,7 +2570,7 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 290,
+                  "charOffset": 298,
                   "snippet": {
                     "text": ".Text"
                   }
@@ -2859,10 +2606,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 297,
+                  "charLength": 305,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "Collect(StaffTable_1,{Company:Company_1.Text, 'First Name':FirstName_1.Text, 'Full Name':FullName_1.Text, 'Job Title':JobTitle_1.Text, 'Last Name':LastName_1.Text, 'Nickname/Alias':Alias_1.Text, Supervisor:Supervisor_1.Text, 'Task Order Name':TaskOrderName_1.Text, 'Task Order #':OrderNum_1.Text})"
+                    "text": "Collect('USGS Roster 071823',{Company:Company_1.Text, 'First Name':FirstName_1.Text, 'Full Name':FullName_1.Text, 'Job Title':JobTitle_1.Text, 'Last Name':LastName_1.Text, 'Nickname/Alias':Alias_1.Text, Supervisor:Supervisor_1.Text, 'Task Order Name':TaskOrderName_1.Text, 'Task Order #':OrderNum_1.Text})"
                   }
                 }
               },
@@ -2900,7 +2647,7 @@
                 },
                 "region": {
                   "charLength": 275,
-                  "charOffset": 21,
+                  "charOffset": 29,
                   "snippet": {
                     "text": "{Company:Company_1.Text, 'First Name':FirstName_1.Text, 'Full Name':FullName_1.Text, 'Job Title':JobTitle_1.Text, 'Last Name':LastName_1.Text, 'Nickname/Alias':Alias_1.Text, Supervisor:Supervisor_1.Text, 'Task Order Name':TaskOrderName_1.Text, 'Task Order #':OrderNum_1.Text}"
                   }
@@ -2915,7 +2662,7 @@
           ],
           "message": {
             "arguments": [
-              "Company",
+              "'Full Name'",
               "Text",
               "Error"
             ],
@@ -3360,19 +3107,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Duplicate_transfer.Form3_1.'First Name_DataCard3_1'.DataCardValue12_1.AccessibleLabel"
+                  "fullyQualifiedName": "Duplicate_transfer.Form2.'First Name_DataCard2'.DataCardValue1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Duplicate_transfer.Form3_1.'First Name_DataCard3_1'.DataCardValue12_1.AccessibleLabel",
+                  "fullyQualifiedName": "Duplicate_transfer.Form2.'First Name_DataCard2'.DataCardValue1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Duplicate_transfer",
-                "type": "Duplicate_transfer.Form3_1.'First Name_DataCard3_1'.DataCardValue12_1"
+                "type": "Duplicate_transfer.Form2.'First Name_DataCard2'.DataCardValue1"
               }
             }
           ],
@@ -3390,19 +3137,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Duplicate_transfer.Form3_1.'Nickname/Alias_DataCard3_1'.DataCardValue13_1.AccessibleLabel"
+                  "fullyQualifiedName": "Duplicate_transfer.Form2.'Nickname/Alias_DataCard2'.DataCardValue2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Duplicate_transfer.Form3_1.'Nickname/Alias_DataCard3_1'.DataCardValue13_1.AccessibleLabel",
+                  "fullyQualifiedName": "Duplicate_transfer.Form2.'Nickname/Alias_DataCard2'.DataCardValue2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Duplicate_transfer",
-                "type": "Duplicate_transfer.Form3_1.'Nickname/Alias_DataCard3_1'.DataCardValue13_1"
+                "type": "Duplicate_transfer.Form2.'Nickname/Alias_DataCard2'.DataCardValue2"
               }
             }
           ],
@@ -3420,19 +3167,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Duplicate_transfer.Form3_1.'Last Name_DataCard3_1'.DataCardValue14_1.AccessibleLabel"
+                  "fullyQualifiedName": "Duplicate_transfer.Form2.'Last Name_DataCard2'.DataCardValue3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Duplicate_transfer.Form3_1.'Last Name_DataCard3_1'.DataCardValue14_1.AccessibleLabel",
+                  "fullyQualifiedName": "Duplicate_transfer.Form2.'Last Name_DataCard2'.DataCardValue3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Duplicate_transfer",
-                "type": "Duplicate_transfer.Form3_1.'Last Name_DataCard3_1'.DataCardValue14_1"
+                "type": "Duplicate_transfer.Form2.'Last Name_DataCard2'.DataCardValue3"
               }
             }
           ],
@@ -3450,19 +3197,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Duplicate_transfer.Form3_1.'Full Name_DataCard3_1'.DataCardValue15_1.AccessibleLabel"
+                  "fullyQualifiedName": "Duplicate_transfer.Form2.'Full Name_DataCard2'.DataCardValue4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Duplicate_transfer.Form3_1.'Full Name_DataCard3_1'.DataCardValue15_1.AccessibleLabel",
+                  "fullyQualifiedName": "Duplicate_transfer.Form2.'Full Name_DataCard2'.DataCardValue4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Duplicate_transfer",
-                "type": "Duplicate_transfer.Form3_1.'Full Name_DataCard3_1'.DataCardValue15_1"
+                "type": "Duplicate_transfer.Form2.'Full Name_DataCard2'.DataCardValue4"
               }
             }
           ],
@@ -3480,19 +3227,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Duplicate_transfer.Form3_1.'Job Title_DataCard3_1'.DataCardValue16_1.AccessibleLabel"
+                  "fullyQualifiedName": "Duplicate_transfer.Form2.'Job Title_DataCard2'.DataCardValue5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Duplicate_transfer.Form3_1.'Job Title_DataCard3_1'.DataCardValue16_1.AccessibleLabel",
+                  "fullyQualifiedName": "Duplicate_transfer.Form2.'Job Title_DataCard2'.DataCardValue5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Duplicate_transfer",
-                "type": "Duplicate_transfer.Form3_1.'Job Title_DataCard3_1'.DataCardValue16_1"
+                "type": "Duplicate_transfer.Form2.'Job Title_DataCard2'.DataCardValue5"
               }
             }
           ],
@@ -3510,19 +3257,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Duplicate_transfer.Form3_1.Company_DataCard3_1.DataCardValue17_1.AccessibleLabel"
+                  "fullyQualifiedName": "Duplicate_transfer.Form2.Company_DataCard2.DataCardValue6.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Duplicate_transfer.Form3_1.Company_DataCard3_1.DataCardValue17_1.AccessibleLabel",
+                  "fullyQualifiedName": "Duplicate_transfer.Form2.Company_DataCard2.DataCardValue6.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Duplicate_transfer",
-                "type": "Duplicate_transfer.Form3_1.Company_DataCard3_1.DataCardValue17_1"
+                "type": "Duplicate_transfer.Form2.Company_DataCard2.DataCardValue6"
               }
             }
           ],
@@ -3540,19 +3287,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Duplicate_transfer.Form3_1.'Task Order #_DataCard3_1'.DataCardValue18_1.AccessibleLabel"
+                  "fullyQualifiedName": "Duplicate_transfer.Form2.'Task Order #_DataCard2'.DataCardValue7.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Duplicate_transfer.Form3_1.'Task Order #_DataCard3_1'.DataCardValue18_1.AccessibleLabel",
+                  "fullyQualifiedName": "Duplicate_transfer.Form2.'Task Order #_DataCard2'.DataCardValue7.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Duplicate_transfer",
-                "type": "Duplicate_transfer.Form3_1.'Task Order #_DataCard3_1'.DataCardValue18_1"
+                "type": "Duplicate_transfer.Form2.'Task Order #_DataCard2'.DataCardValue7"
               }
             }
           ],
@@ -3570,19 +3317,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Duplicate_transfer.Form3_1.'Task Order Name_DataCard3_1'.DataCardValue19_1.AccessibleLabel"
+                  "fullyQualifiedName": "Duplicate_transfer.Form2.'Task Order Name_DataCard2'.DataCardValue8.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Duplicate_transfer.Form3_1.'Task Order Name_DataCard3_1'.DataCardValue19_1.AccessibleLabel",
+                  "fullyQualifiedName": "Duplicate_transfer.Form2.'Task Order Name_DataCard2'.DataCardValue8.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Duplicate_transfer",
-                "type": "Duplicate_transfer.Form3_1.'Task Order Name_DataCard3_1'.DataCardValue19_1"
+                "type": "Duplicate_transfer.Form2.'Task Order Name_DataCard2'.DataCardValue8"
               }
             }
           ],
@@ -3600,19 +3347,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Duplicate_transfer.Form3_1.Supervisor_DataCard3_1.DataCardValue20_1.AccessibleLabel"
+                  "fullyQualifiedName": "Duplicate_transfer.Form2.Supervisor_DataCard2.DataCardValue9.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Duplicate_transfer.Form3_1.Supervisor_DataCard3_1.DataCardValue20_1.AccessibleLabel",
+                  "fullyQualifiedName": "Duplicate_transfer.Form2.Supervisor_DataCard2.DataCardValue9.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Duplicate_transfer",
-                "type": "Duplicate_transfer.Form3_1.Supervisor_DataCard3_1.DataCardValue20_1"
+                "type": "Duplicate_transfer.Form2.Supervisor_DataCard2.DataCardValue9"
               }
             }
           ],
@@ -4104,36 +3851,6 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Testing.TextInput1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Testing.TextInput1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Testing",
-                "type": "Testing.TextInput1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
         },
         {
           "locations": [

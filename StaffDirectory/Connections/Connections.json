@@ -1,4 +1,26 @@
 {
+  "45d1dcd9-88a7-4380-8344-d6c45bb85cec": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://nitsg.sharepoint.com/sites/NISInnovationLab-SoftwareFactory": {
+        "dataSources": {
+          "USGS Roster 071823": {
+            "tableName": "8cbac46b-6587-489f-84a9-0241e5d74d11"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "USGS Roster 071823"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "45d1dcd9-88a7-4380-8344-d6c45bb85cec"
+  },
   "77a13ace-fe30-4103-9667-ccd761a7e3e1": {
     "connectionRef": {
       "apiTier": "Standard",

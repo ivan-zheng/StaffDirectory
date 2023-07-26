@@ -2350,19 +2350,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "scrManager.Search.AccessibleLabel"
+                  "fullyQualifiedName": "scrManager.Search_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "scrManager.Search.AccessibleLabel",
+                  "fullyQualifiedName": "scrManager.Search_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "scrManager",
-                "type": "scrManager.Search"
+                "type": "scrManager.Search_1"
               }
             }
           ],

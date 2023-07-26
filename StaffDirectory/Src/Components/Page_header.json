@@ -67,7 +67,7 @@
         "Name": "Icon1_2",
         "Parent": "Page_header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 149,
+        "PublishOrderIndex": 154,
         "Rules": [
           {
             "Category": "Design",
@@ -301,7 +301,7 @@
         "Name": "Icon3_2",
         "Parent": "Page_header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 150,
+        "PublishOrderIndex": 155,
         "Rules": [
           {
             "Category": "Design",
@@ -562,7 +562,7 @@
         "Name": "Label12_2",
         "Parent": "Page_header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 151,
+        "PublishOrderIndex": 156,
         "Rules": [
           {
             "Category": "Data",
@@ -848,7 +848,7 @@
       "Nav_visible",
       "HeaderTitle"
     ],
-    "LastModifiedTimestamp": "638259920435701989",
+    "LastModifiedTimestamp": "638259892770983723",
     "Name": "Page_header",
     "Rules": [
       {
@@ -955,7 +955,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638259920435701989",
+  "LastModifiedTimestamp": "638259892770983723",
   "Name": "b9e9c7020717474292bbfd84c70fae58",
   "OverridableProperties": {},
   "TemplateOriginalName": "5215c742aeea4048a853e8e745619b28",

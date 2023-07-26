@@ -87,7 +87,7 @@
         "Name": "Image4_1",
         "Parent": "Header_homepage",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 85,
+        "PublishOrderIndex": 86,
         "Rules": [
           {
             "Category": "Data",
@@ -378,7 +378,7 @@
         "Name": "Label12_1",
         "Parent": "Header_homepage",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 86,
+        "PublishOrderIndex": 87,
         "Rules": [
           {
             "Category": "Data",

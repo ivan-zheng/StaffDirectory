@@ -706,7 +706,7 @@ scrManager As screen:
 
     RemoveButton As button:
         Height: =33
-        OnSelect: =Remove(StaffTable_1, StaffGallery.Selected)
+        OnSelect: =Remove('USGS Roster 071823', StaffGallery.Selected)
         Text: ="Remove"
         Width: =153
         X: =721
@@ -716,7 +716,7 @@ scrManager As screen:
     AddButton As button:
         Height: =32
         OnSelect: |-
-            =Collect(StaffTable_1,{Company:Company.Text, 'First Name':FirstName.Text, 'Full Name':FullName.Text, 'Job Title':JobTitle.Text, 'Last Name':LastName.Text, 'Nickname/Alias':Alias.Text, Supervisor:Supervisor.Text, 'Task Order Name':TaskOrderName.Text, 'Task Order #':OrderNum.Text})
+            =Collect('USGS Roster 071823',{Company:Company.Text, 'First Name':FirstName.Text, 'Full Name':FullName.Text, 'Job Title':JobTitle.Text, 'Last Name':LastName.Text, 'Nickname/Alias':Alias.Text, Supervisor:Supervisor.Text, 'Task Order Name':TaskOrderName.Text, 'Task Order #':OrderNum.Text})
         Text: ="Add"
         Width: =152
         X: =938

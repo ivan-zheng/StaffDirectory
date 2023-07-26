@@ -706,7 +706,7 @@ scrManager As screen:
 
     UpdateButton As button:
         Height: =33
-        OnSelect: =SubmitForm('Form1')
+        OnSelect: =SubmitForm(Form1)
         Text: ="Update"
         Width: =150
         X: =1150

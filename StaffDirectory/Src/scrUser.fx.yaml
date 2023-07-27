@@ -22,56 +22,6 @@ scrUser As screen:
         Y: =96
         ZIndex: =3
 
-        Image6 As image:
-            Height: =149
-            OnSelect: =Select(Parent)
-            RadiusBottomLeft: =8
-            RadiusBottomRight: =8
-            RadiusTopLeft: =8
-            RadiusTopRight: =8
-            Width: =237
-            X: =16
-            Y: =40
-            ZIndex: =1
-
-        Title6 As label:
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =66
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =40
-            Text: =ThisItem.'Full Name'
-            VerticalAlign: =VerticalAlign.Top
-            Width: =952
-            X: =253
-            Y: =82
-            ZIndex: =2
-
-        Subtitle5 As label:
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.'Job Title'
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Title6.Width
-            X: =Title6.X
-            Y: =Title6.Y + Title6.Height
-            ZIndex: =3
-
-        Rectangle6 As rectangle:
-            Height: =Parent.TemplateHeight - Separator6.Height
-            OnSelect: =Select(Parent)
-            Visible: =ThisItem.IsSelected
-            Width: =4
-            ZIndex: =6
-
     Form3 As form:
         DataSource: ='USGS Roster 071823'
         Height: =366

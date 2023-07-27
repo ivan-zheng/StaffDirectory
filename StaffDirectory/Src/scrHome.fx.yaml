@@ -4,8 +4,13 @@ scrHome As screen:
     btnViewExistingUser As button:
         Fill: =RGBA(168, 0, 0, 1)
         Height: =60
-        OnSelect: |-
-            =Navigate(scrUser,ScreenTransition.Fade, {ButtonClicked: "View"})
+        OnSelect: |+
+            =If(
+                User().Email = "sushant.dasari@nw-its.com" ||  User().Email = "ivan.zheng@nw-its.com" || User().Email = "ccastedo@nw-its.com",
+                Navigate(scrUser, ScreenTransition.Fade, {ButtonClicked: "View"}),
+                Notify("You do not have permission for this action.", NotificationType.Error)
+            )
+            
         Text: ="View Existing Users"
         Width: =351
         X: =507
@@ -15,8 +20,13 @@ scrHome As screen:
     btnCreateNewUser As button:
         Fill: =RGBA(168, 0, 0, 1)
         Height: =57
-        OnSelect: |-
-            =Navigate(scrManager,ScreenTransition.Fade, {ButtonClicked: "View"})
+        OnSelect: |+
+            =If(
+                User().Email = "aregmi@nw-its.com" ||  User().Email = "ivan.zheng@nw-its.com" || User().Email = "makhtar@nw-its.com" || User().Email = "tnguyen@nw-its.com" || User().Email = "asarkar@nw-its.com",
+                Navigate(scrManager, ScreenTransition.Fade, {ButtonClicked: "View"}),
+                Notify("You do not have permission for this action.", NotificationType.Error)
+            )
+            
         Text: ="Create New User"
         Width: =351
         X: =507

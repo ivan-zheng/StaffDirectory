@@ -367,6 +367,8 @@ scrManager As screen:
             MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "Title")
             Required: =false
             Update: =DataCardValue13.Text
+            Visible: |
+                =false
             Width: =681
             X: =0
             Y: =3

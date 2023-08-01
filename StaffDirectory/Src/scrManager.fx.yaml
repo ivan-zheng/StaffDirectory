@@ -14,7 +14,7 @@ scrManager As screen:
     AddButton As button:
         Height: =32
         OnSelect: |-
-            =Collect('USGS Roster 071823',{'First Name':DataCardValue33.Text, 'Full Name':DataCardValue30.Text, 'Job Title':DataCardValue34.Text, 'Last Name':DataCardValue32.Text, 'Task Order Name':DataCardValue37.Text, 'Location':DataCardValue41.Text, '[Names(s) of Backup]':DataCardValue44.Text, '[Tools/Technologies]': DataCardValue43,'Year of IT Experience':DataCardValue42.Text, 'Laptop Make': DataCardValue45, 'Laptop Model': DataCardValue46, 'Serial Number': DataCardValue47, 'Property Number': DataCardValue48})
+            =Collect('USGS Roster 071823',{'First Name':DataCardValue33.Text, 'Full Name':DataCardValue30.Text, 'Job Title':DataCardValue34.Text, 'Last Name':DataCardValue32.Text, 'Task Order Name':DataCardValue37.Text, Location:DataCardValue41.Text, '[Names(s) of Backup]':DataCardValue44.Text, '[Tools/Technologies]': DataCardValue43,'Year of IT Experience':DataCardValue42.Text, 'Laptop Make': DataCardValue45, 'Laptop Model': DataCardValue46, 'Serial Number': DataCardValue47, 'Property Number': DataCardValue48})
         Text: ="Add"
         Width: =152
         X: =938

@@ -1535,3 +1535,9 @@ scrUser As screen:
                 Y: =DataCardKey50.Y
                 ZIndex: =4
 
+    Label1 As label:
+        Text: =Office365Users.MyProfileV2().displayName
+        X: =20
+        Y: =404
+        ZIndex: =8
+

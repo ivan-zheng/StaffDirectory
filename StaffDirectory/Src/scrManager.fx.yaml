@@ -2,77 +2,6 @@ scrManager As screen:
     BackgroundImage: =
     Fill: =RGBA(116, 116, 116, 1)
 
-    "StaffGallery As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
-        DelayItemLoading: =true
-        Fill: =RGBA(202, 202, 202, 1)
-        Height: =547
-        Items: |
-            =SortByColumns(Filter('USGS Roster 071823', StartsWith('First Name', Search_1.Text) || StartsWith('Last Name', Search_1.Text) || StartsWith('Nickname/Alias', Search_1.Text) || StartsWith('Job Title', Search_1.Text) || StartsWith('Last Name', Search_1.Text) || StartsWith('Job Title', Search_1.Text) || StartsWith(Company, Search_1.Text) || StartsWith('Task Order #', Search_1.Text) || StartsWith('Task Order Name', Search_1.Text) || StartsWith(Supervisor, Search_1.Text)),"Title")
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplatePadding: =0
-        TemplateSize: =92
-        X: =18
-        Y: =130
-        ZIndex: =1
-
-        Image1 As image:
-            Height: =60
-            OnSelect: =Select(Parent)
-            RadiusBottomLeft: =8
-            RadiusBottomRight: =8
-            RadiusTopLeft: =8
-            RadiusTopRight: =8
-            Width: =60
-            X: =16
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =1
-
-        Title1 As label:
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.'Full Name'
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - Image1.Width - 137
-            X: =91
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =2
-
-        NextArrow1 As icon.ChevronRight:
-            AccessibleLabel: =Self.Tooltip
-            Color: =RGBA(166, 166, 166, 1)
-            Height: =50
-            Icon: =Icon.ChevronRight
-            OnSelect: =Select(Parent)
-            PaddingBottom: =16
-            PaddingLeft: =16
-            PaddingRight: =16
-            PaddingTop: =16
-            Tooltip: ="View item details"
-            Width: =50
-            X: =Parent.TemplateWidth - Self.Width - 12
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =3
-
-        Separator1 As rectangle:
-            Height: =8
-            OnSelect: =Select(Parent)
-            Width: =Parent.TemplateWidth
-            Y: =Parent.TemplateHeight - Self.Height
-            ZIndex: =4
-
-        Rectangle1 As rectangle:
-            Height: =Parent.TemplateHeight - Separator1.Height
-            OnSelect: =Select(Parent)
-            Visible: =ThisItem.IsSelected
-            Width: =4
-            ZIndex: =5
-
     RemoveButton As button:
         Height: =33
         OnSelect: =Remove('USGS Roster 071823', StaffGallery.Selected)
@@ -85,7 +14,7 @@ scrManager As screen:
     AddButton As button:
         Height: =32
         OnSelect: |-
-            =Collect('USGS Roster 071823',{'First Name':DataCardValue10.Text, 'Full Name':DataCardValue13.Text, 'Job Title':DataCardValue14.Text, 'Last Name':DataCardValue12.Text, Supervisor:DataCardValue18.Text, 'Task Order Name':DataCardValue17.Text, Company:DataCardValue15.Text, '[Nickname/Alias]': DataCardValue11,'[Task Order #]':DataCardValue16.Text})
+            =Collect('USGS Roster 071823',{'First Name':DataCardValue33.Text, 'Full Name':DataCardValue30.Text, 'Job Title':DataCardValue34.Text, 'Last Name':DataCardValue32.Text, 'Task Order Name':DataCardValue37.Text, 'Location':DataCardValue41.Text, '[Names(s) of Backup]':DataCardValue44.Text, '[Tools/Technologies]': DataCardValue43,'Year of IT Experience':DataCardValue42.Text, 'Laptop Make': DataCardValue45, 'Laptop Model': DataCardValue46, 'Serial Number': DataCardValue47, 'Property Number': DataCardValue48})
         Text: ="Add"
         Width: =152
         X: =938
@@ -119,26 +48,126 @@ scrManager As screen:
 
     AddButton_1 As button:
         Height: =32
-        OnSelect: =SubmitForm(Form1)
+        OnSelect: =SubmitForm(Form2)
         Text: ="Update"
         Width: =152
         X: =1143
         Y: =645
         ZIndex: =11
 
-    Form1 As form:
-        DataSource: ='USGS Roster 071823'
+    "StaffGallery As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
+        DelayItemLoading: =true
         Fill: =RGBA(202, 202, 202, 1)
-        Height: =553
-        Item: =StaffGallery.Selected
-        NumberOfColumns: =1
-        Width: =681
-        X: =672
-        Y: =84
+        Height: =546
+        Items: |
+            =
+            SortByColumns(Filter('USGS Roster 071823', StartsWith('First Name', Search_1.Text) || StartsWith('Last Name', Search_1.Text) || StartsWith('Nickname/Alias', Search_1.Text)|| StartsWith('Job Title', Search_1.Text) || StartsWith('Last Name', Search_1.Text) || StartsWith('Job Title', Search_1.Text) || StartsWith(Company, Search_1.Text) || StartsWith('Task Order #', Search_1.Text) || StartsWith(Supervisor, Search_1.Text)),"Title")
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =104
+        X: =18
+        Y: =130
         ZIndex: =12
 
-        "'First Name_DataCard1' As typedDataCard.textualEditCard":
-            BorderColor: =RGBA(149, 149, 149, 1)
+        Image1 As image:
+            Height: =72
+            Image: =Office365Users.UserPhotoV2(Office365Users.MyProfileV2().userPrincipalName)
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Width: =72
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Title1 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Full Name'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 173
+            X: =103
+            Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle1.Size * 1.8)) / 2
+            ZIndex: =2
+
+        Subtitle1 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'First Name'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title1.Width
+            X: =Title1.X
+            Y: =Title1.Y + Title1.Height
+            ZIndex: =3
+
+        NextArrow1 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Color: =RGBA(166, 166, 166, 1)
+            Height: =50
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =16
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =16
+            Tooltip: ="View item details"
+            Width: =50
+            X: =Parent.TemplateWidth - Self.Width - 12
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator1 As rectangle:
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =5
+
+        Rectangle1 As rectangle:
+            Height: =Parent.TemplateHeight - Separator1.Height
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.IsSelected
+            Width: =4
+            ZIndex: =6
+
+    Form2 As form:
+        DataSource: ='USGS Roster 071823'
+        Height: =561
+        NumberOfColumns: =1
+        Width: =708
+        X: =658
+        Y: =84
+        ZIndex: =13
+
+        Active_DataCard2 As typedDataCard.toggleEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Active"
+            Default: =ThisItem.Active
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'USGS Roster 071823'],DataSourceInfo.DisplayName,"Active")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =true
+            Update: =DataCardValue40.Value
+            Width: =708
+            X: =0
+            Y: =0
+            ZIndex: =14
+
+        "'First Name_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_0"
             Default: =ThisItem.'First Name'
@@ -147,14 +176,14 @@ scrManager As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "field_0")
-            Required: =50
-            Update: =DataCardValue10.Text
-            Width: =681
+            Required: =false
+            Update: =DataCardValue30.Text
+            Width: =708
             X: =0
-            Y: =0
-            ZIndex: =13
+            Y: =1
+            ZIndex: =14
 
-            First As label:
+            DataCardKey31 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -164,7 +193,7 @@ scrManager As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue10 As text:
+            DataCardValue30 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -178,10 +207,10 @@ scrManager As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =First.Y + First.Height + 5
+                Y: =DataCardKey31.Y + DataCardKey31.Height + 5
                 ZIndex: =2
 
-            ErrorMessage1 As label:
+            ErrorMessage31 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -193,20 +222,20 @@ scrManager As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue10.Y + DataCardValue10.Height
+                Y: =DataCardValue30.Y + DataCardValue30.Height
                 ZIndex: =3
 
-            StarVisible1 As label:
+            StarVisible31 As label:
                 Align: =Align.Center
-                Height: =First.Height
+                Height: =DataCardKey31.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =First.Y
+                Y: =DataCardKey31.Y
                 ZIndex: =4
 
-        "'Nickname/Alias_DataCard1' As typedDataCard.textualEditCard":
+        "'Nickname/Alias_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_1"
             Default: =ThisItem.'Nickname/Alias'
@@ -216,13 +245,14 @@ scrManager As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "field_1")
             Required: =false
-            Update: =DataCardValue11.Text
-            Width: =681
+            Update: =DataCardValue31.Text
+            Visible: =false
+            Width: =708
             X: =0
-            Y: =1
-            ZIndex: =13
+            Y: =2
+            ZIndex: =14
 
-            DataCardKey2 As label:
+            DataCardKey32 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -232,7 +262,7 @@ scrManager As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue11 As text:
+            DataCardValue31 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -246,10 +276,10 @@ scrManager As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey2.Y + DataCardKey2.Height + 5
+                Y: =DataCardKey32.Y + DataCardKey32.Height + 5
                 ZIndex: =2
 
-            ErrorMessage2 As label:
+            ErrorMessage32 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -261,20 +291,20 @@ scrManager As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue11.Y + DataCardValue11.Height
+                Y: =DataCardValue31.Y + DataCardValue31.Height
                 ZIndex: =3
 
-            StarVisible2 As label:
+            StarVisible32 As label:
                 Align: =Align.Center
-                Height: =DataCardKey2.Height
+                Height: =DataCardKey32.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey2.Y
+                Y: =DataCardKey32.Y
                 ZIndex: =4
 
-        "'Last Name_DataCard1' As typedDataCard.textualEditCard":
+        "'Last Name_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_2"
             Default: =ThisItem.'Last Name'
@@ -283,14 +313,14 @@ scrManager As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "field_2")
-            Required: =true
-            Update: =DataCardValue12.Text
-            Width: =681
+            Required: =false
+            Update: =DataCardValue32.Text
+            Width: =708
             X: =0
-            Y: =2
-            ZIndex: =13
+            Y: =3
+            ZIndex: =14
 
-            DataCardKey3 As label:
+            DataCardKey33 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -300,7 +330,7 @@ scrManager As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue12 As text:
+            DataCardValue32 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -314,10 +344,10 @@ scrManager As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey3.Y + DataCardKey3.Height + 5
+                Y: =DataCardKey33.Y + DataCardKey33.Height + 5
                 ZIndex: =2
 
-            ErrorMessage3 As label:
+            ErrorMessage33 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -329,20 +359,20 @@ scrManager As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue12.Y + DataCardValue12.Height
+                Y: =DataCardValue32.Y + DataCardValue32.Height
                 ZIndex: =3
 
-            StarVisible3 As label:
+            StarVisible33 As label:
                 Align: =Align.Center
-                Height: =DataCardKey3.Height
+                Height: =DataCardKey33.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey3.Y
+                Y: =DataCardKey33.Y
                 ZIndex: =4
 
-        "'Full Name_DataCard1' As typedDataCard.textualEditCard":
+        "'Full Name_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="Title"
             Default: =ThisItem.'Full Name'
@@ -352,15 +382,14 @@ scrManager As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "Title")
             Required: =false
-            Update: =DataCardValue13.Text
-            Visible: |
-                =false
-            Width: =681
+            Update: =DataCardValue33.Text
+            Visible: =false
+            Width: =708
             X: =0
-            Y: =3
-            ZIndex: =13
+            Y: =4
+            ZIndex: =14
 
-            DataCardKey4 As label:
+            DataCardKey34 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -370,9 +399,9 @@ scrManager As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue13 As text:
+            DataCardValue33 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =DataCardValue10.Text & " " & DataCardValue12.Text
+                Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
@@ -384,10 +413,10 @@ scrManager As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey4.Y + DataCardKey4.Height + 5
+                Y: =DataCardKey34.Y + DataCardKey34.Height + 5
                 ZIndex: =2
 
-            ErrorMessage4 As label:
+            ErrorMessage34 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -399,20 +428,101 @@ scrManager As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue13.Y + DataCardValue13.Height
+                Y: =DataCardValue33.Y + DataCardValue33.Height
                 ZIndex: =3
 
-            StarVisible4 As label:
+            StarVisible34 As label:
                 Align: =Align.Center
-                Height: =DataCardKey4.Height
+                Height: =DataCardKey34.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey4.Y
+                Y: =DataCardKey34.Y
                 ZIndex: =4
 
-        "'Job Title_DataCard1' As typedDataCard.textualEditCard":
+        "'Task Order Name_DataCard2' As typedDataCard.comboBoxMultiSelectEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_7"
+            Default: =ThisItem.'Task Order Name'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'USGS Roster 071823'],DataSourceInfo.DisplayName,"field_7")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =true
+            Update: =DataCardValue37.SelectedItems
+            Width: =708
+            X: =0
+            Y: =5
+            ZIndex: =14
+
+            DataCardKey38 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue37 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                InputTextPlaceholder: ="Find Task Order"
+                Items: =Choices([@'USGS Roster 071823'].'Task Order Name')
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('USGS Roster 071823'.'Task Order Name',DataCardValue37.SearchText)
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey38.Y + DataCardKey38.Height + 5
+                ZIndex: =2
+
+            ErrorMessage38 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue37.Y + DataCardValue37.Height
+                ZIndex: =3
+
+            StarVisible38 As label:
+                Align: =Align.Center
+                Height: =DataCardKey38.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey38.Y
+                ZIndex: =4
+
+        Location_DataCard2 As typedDataCard.comboBoxEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Location"
+            Default: =ThisItem.Location
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'USGS Roster 071823'],DataSourceInfo.DisplayName,"Location")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =true
+            Update: =DataCardValue41.Selected
+            Width: =708
+            X: =0
+            Y: =6
+            ZIndex: =14
+
+        "'Job Title_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_4"
             Default: =ThisItem.'Job Title'
@@ -422,13 +532,13 @@ scrManager As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "field_4")
             Required: =true
-            Update: =DataCardValue14.Text
-            Width: =681
+            Update: =DataCardValue34.Text
+            Width: =708
             X: =0
-            Y: =4
-            ZIndex: =13
+            Y: =7
+            ZIndex: =14
 
-            DataCardKey5 As label:
+            DataCardKey35 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -438,7 +548,7 @@ scrManager As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue14 As text:
+            DataCardValue34 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -452,10 +562,10 @@ scrManager As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey5.Y + DataCardKey5.Height + 5
+                Y: =DataCardKey35.Y + DataCardKey35.Height + 5
                 ZIndex: =2
 
-            ErrorMessage5 As label:
+            ErrorMessage35 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -467,20 +577,195 @@ scrManager As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue14.Y + DataCardValue14.Height
+                Y: =DataCardValue34.Y + DataCardValue34.Height
                 ZIndex: =3
 
-            StarVisible5 As label:
+            StarVisible35 As label:
                 Align: =Align.Center
-                Height: =DataCardKey5.Height
+                Height: =DataCardKey35.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey5.Y
+                Y: =DataCardKey35.Y
                 ZIndex: =4
 
-        Company_DataCard1 As typedDataCard.textualEditCard:
+        "'Name(s) of Backup_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Name_x0028_s_x0029_ofBackup"
+            Default: =ThisItem.'Name(s) of Backup'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'USGS Roster 071823'],DataSourceInfo.DisplayName,"Name_x0028_s_x0029_ofBackup")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "Name_x0028_s_x0029_ofBackup")
+            Required: =true
+            Update: =DataCardValue44.Text
+            Width: =708
+            X: =0
+            Y: =8
+            ZIndex: =14
+
+        "'Year of IT Experience_DataCard2' As typedDataCard.comboBoxEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="YearofITExperience"
+            Default: =ThisItem.'Year of IT Experience'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'USGS Roster 071823'],DataSourceInfo.DisplayName,"YearofITExperience")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =true
+            Update: =DataCardValue42.Selected
+            Width: =708
+            X: =0
+            Y: =9
+            ZIndex: =14
+
+        "'Tools/Technologies_DataCard2' As typedDataCard.comboBoxMultiSelectEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Tools_x002f_Technologies"
+            Default: =ThisItem.'Tools/Technologies'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'USGS Roster 071823'],DataSourceInfo.DisplayName,"Tools_x002f_Technologies")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =true
+            Update: =DataCardValue43.SelectedItems
+            Width: =708
+            X: =0
+            Y: =10
+            ZIndex: =14
+
+        "'Laptop Make_DataCard2' As typedDataCard.comboBoxEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="LaptopMake"
+            Default: =ThisItem.'Laptop Make'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'USGS Roster 071823'],DataSourceInfo.DisplayName,"LaptopMake")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue45.Selected
+            Width: =708
+            X: =0
+            Y: =11
+            ZIndex: =14
+
+        "'Laptop Model_DataCard2' As typedDataCard.comboBoxEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="LaptopModel"
+            Default: =ThisItem.'Laptop Model'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'USGS Roster 071823'],DataSourceInfo.DisplayName,"LaptopModel")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue46.Selected
+            Width: =708
+            X: =0
+            Y: =12
+            ZIndex: =14
+
+        "'Serial Number_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="SerialNumber"
+            Default: =ThisItem.'Serial Number'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'USGS Roster 071823'],DataSourceInfo.DisplayName,"SerialNumber")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "SerialNumber")
+            Required: =false
+            Update: =DataCardValue47.Text
+            Width: =708
+            X: =0
+            Y: =13
+            ZIndex: =14
+
+            DataCardKey48 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+        "'Warranty Date_DataCard2' As typedDataCard.dateTimeEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="WarrantyDate"
+            Default: =ThisItem.'Warranty Date'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'USGS Roster 071823'],DataSourceInfo.DisplayName,"WarrantyDate")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DateValue2.SelectedDate + Time(Value(HourValue2.Selected.Value), Value(MinuteValue2.Selected.Value), 0)
+            Width: =708
+            X: =0
+            Y: =14
+            ZIndex: =14
+
+        "'Property Name_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="PropertyName"
+            Default: =ThisItem.'Property Number'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'USGS Roster 071823'],DataSourceInfo.DisplayName,"PropertyName")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "PropertyName")
+            Required: =false
+            Update: =DataCardValue48.Text
+            Width: =708
+            X: =0
+            Y: =15
+            ZIndex: =14
+
+            DataCardValue48 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey49.Y + DataCardKey49.Height + 5
+                ZIndex: =2
+
+            ErrorMessage49 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue48.Y + DataCardValue48.Height
+                ZIndex: =3
+
+            StarVisible49 As label:
+                Align: =Align.Center
+                Height: =DataCardKey49.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey49.Y
+                ZIndex: =4
+
+        Company_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_5"
             Default: =ThisItem.Company
@@ -490,13 +775,14 @@ scrManager As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "field_5")
             Required: =false
-            Update: =DataCardValue15.Text
-            Width: =681
+            Update: =DataCardValue35.Text
+            Visible: =false
+            Width: =708
             X: =0
-            Y: =5
-            ZIndex: =13
+            Y: =16
+            ZIndex: =14
 
-            DataCardKey6 As label:
+            DataCardKey36 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -506,7 +792,7 @@ scrManager As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue15 As text:
+            DataCardValue35 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -520,10 +806,10 @@ scrManager As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey6.Y + DataCardKey6.Height + 5
+                Y: =DataCardKey36.Y + DataCardKey36.Height + 5
                 ZIndex: =2
 
-            ErrorMessage6 As label:
+            ErrorMessage36 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -535,20 +821,20 @@ scrManager As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue15.Y + DataCardValue15.Height
+                Y: =DataCardValue35.Y + DataCardValue35.Height
                 ZIndex: =3
 
-            StarVisible6 As label:
+            StarVisible36 As label:
                 Align: =Align.Center
-                Height: =DataCardKey6.Height
+                Height: =DataCardKey36.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey6.Y
+                Y: =DataCardKey36.Y
                 ZIndex: =4
 
-        "'Task Order #_DataCard1' As typedDataCard.numberEditCard":
+        "'Task Order #_DataCard2' As typedDataCard.numberEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_6"
             Default: |-
@@ -558,13 +844,14 @@ scrManager As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =Value(DataCardValue16.Text)
-            Width: =681
+            Update: =Value(DataCardValue36.Text)
+            Visible: =false
+            Width: =708
             X: =0
-            Y: =6
-            ZIndex: =13
+            Y: =17
+            ZIndex: =14
 
-            DataCardKey7 As label:
+            DataCardKey37 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -574,7 +861,7 @@ scrManager As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue16 As text:
+            DataCardValue36 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -588,10 +875,10 @@ scrManager As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey7.Y + DataCardKey7.Height + 5
+                Y: =DataCardKey37.Y + DataCardKey37.Height + 5
                 ZIndex: =2
 
-            ErrorMessage7 As label:
+            ErrorMessage37 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -603,88 +890,20 @@ scrManager As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue16.Y + DataCardValue16.Height
+                Y: =DataCardValue36.Y + DataCardValue36.Height
                 ZIndex: =3
 
-            StarVisible7 As label:
+            StarVisible37 As label:
                 Align: =Align.Center
-                Height: =DataCardKey7.Height
+                Height: =DataCardKey37.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey7.Y
+                Y: =DataCardKey37.Y
                 ZIndex: =4
 
-        "'Task Order Name_DataCard1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_7"
-            Default: =ThisItem.'Task Order Name'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'USGS Roster 071823'],DataSourceInfo.DisplayName,"field_7")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "field_7")
-            Required: =true
-            Update: =DataCardValue17.Text
-            Width: =681
-            X: =0
-            Y: =7
-            ZIndex: =13
-
-            DataCardKey8 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue17 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey8.Y + DataCardKey8.Height + 5
-                ZIndex: =2
-
-            ErrorMessage8 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue17.Y + DataCardValue17.Height
-                ZIndex: =3
-
-            StarVisible8 As label:
-                Align: =Align.Center
-                Height: =DataCardKey8.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey8.Y
-                ZIndex: =4
-
-        Supervisor_DataCard1 As typedDataCard.textualEditCard:
+        Supervisor_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_8"
             Default: =ThisItem.Supervisor
@@ -694,23 +913,14 @@ scrManager As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "field_8")
             Required: =false
-            Update: =DataCardValue18.Text
-            Width: =681
+            Update: =DataCardValue38.Text
+            Visible: =false
+            Width: =708
             X: =0
-            Y: =8
-            ZIndex: =13
+            Y: =18
+            ZIndex: =14
 
-            DataCardKey9 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue18 As text:
+            DataCardValue38 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -724,10 +934,10 @@ scrManager As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey9.Y + DataCardKey9.Height + 5
+                Y: =DataCardKey39.Y + DataCardKey39.Height + 5
                 ZIndex: =2
 
-            ErrorMessage9 As label:
+            ErrorMessage39 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -739,16 +949,59 @@ scrManager As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue18.Y + DataCardValue18.Height
+                Y: =DataCardValue38.Y + DataCardValue38.Height
                 ZIndex: =3
 
-            StarVisible9 As label:
+            StarVisible39 As label:
                 Align: =Align.Center
-                Height: =DataCardKey9.Height
+                Height: =DataCardKey39.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey9.Y
+                Y: =DataCardKey39.Y
                 ZIndex: =4
+
+        __PowerAppsId___DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_9"
+            Default: =ThisItem.__PowerAppsId__
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'USGS Roster 071823'],DataSourceInfo.DisplayName,"field_9")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "field_9")
+            Required: =false
+            Update: =DataCardValue39.Text
+            Visible: =false
+            Width: =708
+            X: =0
+            Y: =19
+            ZIndex: =14
+
+        Attachments_DataCard2 As typedDataCard.attachmentsEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="{Attachments}"
+            Default: =ThisItem.Attachments
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'USGS Roster 071823'],DataSourceInfo.DisplayName,"{Attachments}")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue49.Attachments
+            Visible: =false
+            Width: =708
+            X: =0
+            Y: =20
+            ZIndex: =14
+
+            DataCardKey51 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
 

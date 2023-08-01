@@ -24,13 +24,8 @@ scrManager As screen:
                     'Serial Number': DataCardValue38.Text,
                     'Name(s) of Backup': DataCardValue35.Text,
                     'Property Number': DataCardValue39.Text,
-                    
-                    'Laptop Make': DataCardValue36.Selected.Value,
-                    'Laptop Model': DataCardValue37.Selected.Value,
-                    'Task Order Name': DataCardValue28.Selected.Value,
-                    'Location': DataCardValue32.Selected.Value,
-                    '[Tools/Technologies]': DataCardValue34.Selected.Value,
-                    'Year of IT Experience': DataCardValue33.Selected.Value
+            
+                    'Laptop Make': DataCardValue36.Selected
                 }
             )
         Text: ="Add"

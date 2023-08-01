@@ -21,16 +21,16 @@ scrManager As screen:
                     'Last Name': DataCardValue23.Text,
                     'Full Name': DataCardValue24.Text,
                     'Job Title': DataCardValue25.Text,
-                    'Task Order Name': DataCardValue28.Selected.Text, 
-            
-                    Location: DataCardValue41.Selected.Value,       
-                    '[Names(s) of Backup]': DataCardValue44.Text,
-                    '[Tools/Technologies]': DataCardValue43.Selected.Value.Value, 
-                    'Year of IT Experience': DataCardValue42.Selected.Value.Value,
-                    'Laptop Make': DataCardValue45.Selected.Value.Value, 
-                    'Laptop Model': DataCardValue46.Selected.Value.Value, 
-                    'Serial Number': DataCardValue47.Text,
-                    'Property Number': DataCardValue48.Text
+                    'Serial Number': DataCardValue38.Text,
+                    'Name(s) of Backup': DataCardValue35.Text,
+                    'Property Number': DataCardValue39.Text,
+                    
+                    'Laptop Make': DataCardValue36.Selected.Value,
+                    'Laptop Model': DataCardValue37.Selected.Value,
+                    'Task Order Name': DataCardValue28.Selected.Value,
+                    'Location': DataCardValue32.Selected.Value,
+                    '[Tools/Technologies]': DataCardValue34.Selected.Value,
+                    'Year of IT Experience': DataCardValue33.Selected.Value
                 }
             )
         Text: ="Add"
@@ -78,7 +78,7 @@ scrManager As screen:
         Fill: =RGBA(202, 202, 202, 1)
         Height: =546
         Items: |
-            =SortByColumns(Filter('USGS Roster 071823', StartsWith('First Name', Search_1.Text) || StartsWith('Last Name', Search_1.Text) ||  StartsWith('Job Title', Search_1.Text)),"Title")
+            =SortByColumns(Filter('USGS Roster 071823', StartsWith('First Name', Search_1.Text) || StartsWith('Last Name', Search_1.Text) ||  StartsWith('Job Title', Search_1.Text), StartsWith('First Name', Search_1.Text), StartsWith('First Name', Search_1.Text), StartsWith('First Name', Search_1.Text), StartsWith('First Name', Search_1.Text)),"Title")
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -162,12 +162,13 @@ scrManager As screen:
 
     Form1 As form:
         DataSource: ='USGS Roster 071823'
-        Height: =573
+        Fill: =RGBA(202, 202, 202, 1)
+        Height: =547
         Item: =StaffGallery.Selected
         NumberOfColumns: =1
-        Width: =708
-        X: =658
-        Y: =72
+        Width: =679
+        X: =673
+        Y: =84
         ZIndex: =13
 
         Active_DataCard2 As typedDataCard.toggleEditCard:
@@ -180,7 +181,7 @@ scrManager As screen:
             Height: =50
             Required: =true
             Update: =DataCardValue31.Value
-            Width: =708
+            Width: =679
             X: =0
             Y: =0
             ZIndex: =14
@@ -240,7 +241,7 @@ scrManager As screen:
             MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "field_2")
             Required: =true
             Update: =DataCardValue23.Text
-            Width: =708
+            Width: =679
             X: =0
             Y: =2
             ZIndex: =14
@@ -308,7 +309,7 @@ scrManager As screen:
             MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "Title")
             Required: =false
             Update: =DataCardValue24.Text
-            Width: =708
+            Width: =679
             X: =0
             Y: =3
             ZIndex: =14
@@ -376,7 +377,7 @@ scrManager As screen:
             MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "field_4")
             Required: =true
             Update: =DataCardValue25.Text
-            Width: =708
+            Width: =679
             X: =0
             Y: =4
             ZIndex: =14
@@ -443,7 +444,7 @@ scrManager As screen:
             Height: =50
             Required: =true
             Update: =DataCardValue28.SelectedItems
-            Width: =708
+            Width: =679
             X: =0
             Y: =5
             ZIndex: =14
@@ -508,7 +509,7 @@ scrManager As screen:
             Height: =50
             Required: =true
             Update: =DataCardValue32.Selected
-            Width: =708
+            Width: =679
             X: =0
             Y: =6
             ZIndex: =14
@@ -574,7 +575,7 @@ scrManager As screen:
             Height: =50
             Required: =true
             Update: =DataCardValue33.Selected
-            Width: =708
+            Width: =679
             X: =0
             Y: =7
             ZIndex: =14
@@ -640,7 +641,7 @@ scrManager As screen:
             Height: =50
             Required: =true
             Update: =DataCardValue34.SelectedItems
-            Width: =708
+            Width: =679
             X: =0
             Y: =8
             ZIndex: =14
@@ -706,7 +707,7 @@ scrManager As screen:
             MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "Name_x0028_s_x0029_ofBackup")
             Required: =true
             Update: =DataCardValue35.Text
-            Width: =708
+            Width: =679
             X: =0
             Y: =9
             ZIndex: =14
@@ -773,7 +774,7 @@ scrManager As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue36.Selected
-            Width: =708
+            Width: =679
             X: =0
             Y: =10
             ZIndex: =14
@@ -839,7 +840,7 @@ scrManager As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue37.Selected
-            Width: =708
+            Width: =679
             X: =0
             Y: =11
             ZIndex: =14
@@ -906,7 +907,7 @@ scrManager As screen:
             MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "SerialNumber")
             Required: =false
             Update: =DataCardValue38.Text
-            Width: =708
+            Width: =679
             X: =0
             Y: =12
             ZIndex: =14
@@ -974,7 +975,7 @@ scrManager As screen:
             MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "PropertyName")
             Required: =false
             Update: =DataCardValue39.Text
-            Width: =708
+            Width: =679
             X: =0
             Y: =13
             ZIndex: =14
@@ -1041,7 +1042,7 @@ scrManager As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue40.SelectedDate
-            Width: =708
+            Width: =679
             X: =0
             Y: =14
             ZIndex: =14
@@ -1107,7 +1108,7 @@ scrManager As screen:
             MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "field_0")
             Required: =true
             Update: =DataCardValue21.Text
-            Width: =708
+            Width: =679
             X: =0
             Y: =1
             ZIndex: =14

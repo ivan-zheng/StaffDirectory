@@ -82,7 +82,7 @@
         "Name": "Label3_2",
         "Parent": "Footer",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 129,
+        "PublishOrderIndex": 154,
         "Rules": [
           {
             "Category": "Data",
@@ -413,7 +413,7 @@
         "Name": "Label3_3",
         "Parent": "Footer",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 130,
+        "PublishOrderIndex": 155,
         "Rules": [
           {
             "Category": "Data",
@@ -744,7 +744,7 @@
         "Name": "Label3_4",
         "Parent": "Footer",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 131,
+        "PublishOrderIndex": 156,
         "Rules": [
           {
             "Category": "Data",

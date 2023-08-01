@@ -17,11 +17,12 @@ scrManager As screen:
             =Collect(
                 'USGS Roster 071823',
                 {
-                    'First Name': DataCardValue33.Text,
-                    'Full Name': DataCardValue30.Text,
-                    'Job Title': DataCardValue34.Text,
-                    'Last Name': DataCardValue32.Text,
-                    'Task Order Name': DataCardValue37.Selected.Value,  
+                    'First Name': DataCardValue21.Text,
+                    'Last Name': DataCardValue23.Text,
+                    'Full Name': DataCardValue24.Text,
+                    'Job Title': DataCardValue25.Text,
+                    'Task Order Name': DataCardValue28.Selected.Text, 
+            
                     Location: DataCardValue41.Selected.Value,       
                     '[Names(s) of Backup]': DataCardValue44.Text,
                     '[Tools/Technologies]': DataCardValue43.Selected.Value.Value, 
@@ -162,6 +163,7 @@ scrManager As screen:
     Form1 As form:
         DataSource: ='USGS Roster 071823'
         Height: =573
+        Item: =StaffGallery.Selected
         NumberOfColumns: =1
         Width: =708
         X: =658

@@ -2870,164 +2870,7 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 81,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "scrManager",
-                "type": "scrManager.AddButton"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "scrManager.AddButton.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scrManager.AddButton.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 15,
-                  "charOffset": 110,
-                  "snippet": {
-                    "text": "DataCardValue30"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "scrManager",
-                "type": "scrManager.AddButton"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "DataCardValue30"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "scrManager.AddButton.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scrManager.AddButton.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 125,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "scrManager",
-                "type": "scrManager.AddButton"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "scrManager.AddButton.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scrManager.AddButton.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 169,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "scrManager",
-                "type": "scrManager.AddButton"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "scrManager.AddButton.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scrManager.AddButton.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 213,
+                  "charOffset": 272,
                   "snippet": {
                     "text": ".Text"
                   }
@@ -4018,7 +3861,7 @@
                   "charLength": 772,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "Collect(\r\n    'USGS Roster 071823',\r\n    {\r\n        'First Name': DataCardValue33.Text,\r\n        'Full Name': DataCardValue30.Text,\r\n        'Job Title': DataCardValue34.Text,\r\n        'Last Name': DataCardValue32.Text,\r\n        'Task Order Name': DataCardValue37.Selected.Value,  \r\n        Location: DataCardValue41.Selected.Value,       \r\n        '[Names(s) of Backup]': DataCardValue44.Text,\r\n        '[Tools/Technologies]': DataCardValue43.Selected.Value.Value, \r\n        'Year of IT Experience': DataCardValue42.Selected.Value.Value,\r\n        'Laptop Make': DataCardValue45.Selected.Value.Value, \r\n        'Laptop Model': DataCardValue46.Selected.Value.Value, \r\n        'Serial Number': DataCardValue47.Text,\r\n        'Property Number': DataCardValue48.Text\r\n    }\r\n)"
+                    "text": "Collect(\r\n    'USGS Roster 071823',\r\n    {\r\n        'First Name': DataCardValue21.Text,\r\n        'Last Name': DataCardValue23.Text,\r\n        'Full Name': DataCardValue24.Text,\r\n        'Job Title': DataCardValue25.Text,\r\n        'Task Order Name': DataCardValue28.Selected.Text, \r\n\r\n        Location: DataCardValue41.Selected.Value,       \r\n        '[Names(s) of Backup]': DataCardValue44.Text,\r\n        '[Tools/Technologies]': DataCardValue43.Selected.Value.Value, \r\n        'Year of IT Experience': DataCardValue42.Selected.Value.Value,\r\n        'Laptop Make': DataCardValue45.Selected.Value.Value, \r\n        'Laptop Model': DataCardValue46.Selected.Value.Value, \r\n        'Serial Number': DataCardValue47.Text,\r\n        'Property Number': DataCardValue48.Text\r\n    }\r\n)"
                   }
                 }
               },
@@ -4058,7 +3901,7 @@
                   "charLength": 728,
                   "charOffset": 41,
                   "snippet": {
-                    "text": "{\r\n        'First Name': DataCardValue33.Text,\r\n        'Full Name': DataCardValue30.Text,\r\n        'Job Title': DataCardValue34.Text,\r\n        'Last Name': DataCardValue32.Text,\r\n        'Task Order Name': DataCardValue37.Selected.Value,  \r\n        Location: DataCardValue41.Selected.Value,       \r\n        '[Names(s) of Backup]': DataCardValue44.Text,\r\n        '[Tools/Technologies]': DataCardValue43.Selected.Value.Value, \r\n        'Year of IT Experience': DataCardValue42.Selected.Value.Value,\r\n        'Laptop Make': DataCardValue45.Selected.Value.Value, \r\n        'Laptop Model': DataCardValue46.Selected.Value.Value, \r\n        'Serial Number': DataCardValue47.Text,\r\n        'Property Number': DataCardValue48.Text\r\n    }"
+                    "text": "{\r\n        'First Name': DataCardValue21.Text,\r\n        'Last Name': DataCardValue23.Text,\r\n        'Full Name': DataCardValue24.Text,\r\n        'Job Title': DataCardValue25.Text,\r\n        'Task Order Name': DataCardValue28.Selected.Text, \r\n\r\n        Location: DataCardValue41.Selected.Value,       \r\n        '[Names(s) of Backup]': DataCardValue44.Text,\r\n        '[Tools/Technologies]': DataCardValue43.Selected.Value.Value, \r\n        'Year of IT Experience': DataCardValue42.Selected.Value.Value,\r\n        'Laptop Make': DataCardValue45.Selected.Value.Value, \r\n        'Laptop Model': DataCardValue46.Selected.Value.Value, \r\n        'Serial Number': DataCardValue47.Text,\r\n        'Property Number': DataCardValue48.Text\r\n    }"
                   }
                 }
               },

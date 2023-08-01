@@ -3,8 +3,8 @@ Screen1 As screen:
     Form2 As form:
         DataSource: ='USGS Roster 071823'
         Item: =Gallery1.Selected
-        X: =566
-        Y: =141
+        X: =456
+        Y: =98
         ZIndex: =1
 
         "'First Name_DataCard4' As typedDataCard.textualEditCard":
@@ -513,10 +513,11 @@ Screen1 As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'USGS Roster 071823'].field_7)
+                IsSearchable: =false
+                Items: =Choices([@'USGS Roster 071823'].'Task Order Name')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('USGS Roster 071823'.field_7,DataCardValue38.SearchText)
+                SearchItems: =[]
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -811,11 +812,13 @@ Screen1 As screen:
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
+        Height: =313
         Items: ='USGS Roster 071823'
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =104
+        Width: =312
         Y: =48
         ZIndex: =2
 

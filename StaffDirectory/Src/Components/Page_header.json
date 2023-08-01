@@ -87,7 +87,7 @@
         "Name": "Image4_2",
         "Parent": "Page_header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 217,
+        "PublishOrderIndex": 197,
         "Rules": [
           {
             "Category": "Data",
@@ -357,7 +357,7 @@
         "Name": "Icon3_2",
         "Parent": "Page_header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 218,
+        "PublishOrderIndex": 198,
         "Rules": [
           {
             "Category": "Design",
@@ -618,7 +618,7 @@
         "Name": "Label12_2",
         "Parent": "Page_header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 219,
+        "PublishOrderIndex": 199,
         "Rules": [
           {
             "Category": "Data",

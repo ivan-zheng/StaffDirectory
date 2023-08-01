@@ -158,23 +158,6 @@ scrUser As screen:
             Y: =1
             ZIndex: =8
 
-        Company_DataCard3 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_5"
-            Default: =ThisItem.Company
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'USGS Roster 071823'],DataSourceInfo.DisplayName,"field_5")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "field_5")
-            Required: =false
-            Update: =DataCardValue35.Text
-            Visible: =false
-            Width: =314
-            X: =3
-            Y: =4
-            ZIndex: =8
-
         "'Task Order #_DataCard3' As typedDataCard.numberEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_6"
@@ -222,6 +205,22 @@ scrUser As screen:
             Y: =1
             ZIndex: =8
 
+        "'Property Number_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="PropertyName"
+            Default: =ThisItem.'Property Number'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'USGS Roster 071823'],DataSourceInfo.DisplayName,"PropertyName")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "PropertyName")
+            Required: =false
+            Update: =DataCardValue48.Text
+            Width: =314
+            X: =3
+            Y: =3
+            ZIndex: =8
+
         "'Full Name_DataCard3' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="Title"
@@ -239,19 +238,20 @@ scrUser As screen:
             Y: =4
             ZIndex: =8
 
-        "'Property Number_DataCard1' As typedDataCard.textualEditCard":
+        Company_DataCard3 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="PropertyName"
-            Default: =ThisItem.'Property Number'
+            DataField: ="field_5"
+            Default: =ThisItem.Company
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'USGS Roster 071823'],DataSourceInfo.DisplayName,"PropertyName")
+            DisplayName: =DataSourceInfo([@'USGS Roster 071823'],DataSourceInfo.DisplayName,"field_5")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "PropertyName")
+            MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "field_5")
             Required: =false
-            Update: =DataCardValue48.Text
+            Update: =DataCardValue35.Text
+            Visible: =false
             Width: =314
             X: =3
-            Y: =3
+            Y: =4
             ZIndex: =8
 

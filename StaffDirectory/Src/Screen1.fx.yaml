@@ -597,10 +597,10 @@ Screen1 As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'USGS Roster 071823'].field_7)
+                Items: =Choices([@'USGS Roster 071823'].'Task Order Name')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('USGS Roster 071823'.field_7,DataCardValue50.SearchText)
+                SearchItems: =Choices('USGS Roster 071823'.'Task Order Name',DataCardValue50.SearchText)
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -923,10 +923,10 @@ Screen1 As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'USGS Roster 071823'].YearofITExperience)
+                Items: =Choices([@'USGS Roster 071823'].'Year of IT Experience')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('USGS Roster 071823'.YearofITExperience,DataCardValue55.SearchText)
+                SearchItems: =Choices('USGS Roster 071823'.'Year of IT Experience',DataCardValue55.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -989,10 +989,10 @@ Screen1 As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'USGS Roster 071823'].Tools_x002f_Technologies)
+                Items: =Choices([@'USGS Roster 071823'].'Tools/Technologies')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('USGS Roster 071823'.Tools_x002f_Technologies,DataCardValue56.SearchText)
+                SearchItems: =Choices('USGS Roster 071823'.'Tools/Technologies',DataCardValue56.SearchText)
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30

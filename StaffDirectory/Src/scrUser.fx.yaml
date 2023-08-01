@@ -221,23 +221,6 @@ scrUser As screen:
             Y: =3
             ZIndex: =8
 
-        "'Full Name_DataCard3' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Title"
-            Default: =ThisItem.'Full Name'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'USGS Roster 071823'],DataSourceInfo.DisplayName,"Title")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "Title")
-            Required: =false
-            Update: =DataCardValue33.Text
-            Visible: =false
-            Width: =314
-            X: =2
-            Y: =4
-            ZIndex: =8
-
         Company_DataCard3 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_5"
@@ -252,6 +235,23 @@ scrUser As screen:
             Visible: =false
             Width: =314
             X: =3
+            Y: =4
+            ZIndex: =8
+
+        "'Full Name_DataCard3' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Title"
+            Default: =ThisItem.'Full Name'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'USGS Roster 071823'],DataSourceInfo.DisplayName,"Title")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "Title")
+            Required: =false
+            Update: =DataCardValue33.Text
+            Visible: =false
+            Width: =314
+            X: =2
             Y: =4
             ZIndex: =8
 

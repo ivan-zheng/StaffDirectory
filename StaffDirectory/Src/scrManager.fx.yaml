@@ -147,7 +147,7 @@ scrManager As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "field_0")
-            Required: =false
+            Required: =50
             Update: =DataCardValue10.Text
             Width: =681
             X: =0
@@ -283,7 +283,7 @@ scrManager As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "field_2")
-            Required: =false
+            Required: =true
             Update: =DataCardValue12.Text
             Width: =681
             X: =0
@@ -421,7 +421,7 @@ scrManager As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "field_4")
-            Required: =false
+            Required: =true
             Update: =DataCardValue14.Text
             Width: =681
             X: =0
@@ -625,7 +625,7 @@ scrManager As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'USGS Roster 071823'], DataSourceInfo.MaxLength, "field_7")
-            Required: =false
+            Required: =true
             Update: =DataCardValue17.Text
             Width: =681
             X: =0

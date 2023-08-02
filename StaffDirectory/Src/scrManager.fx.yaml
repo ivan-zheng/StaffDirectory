@@ -528,10 +528,10 @@ scrManager As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'USGS Roster 071823'].field_7)
+                Items: =Choices([@'USGS Roster 071823'].'Task Order Name')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('USGS Roster 071823'.field_7,DataCardValue28.SearchText)
+                SearchItems: =Choices('USGS Roster 071823'.'Task Order Name',DataCardValue28.SearchText)
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -659,10 +659,10 @@ scrManager As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'USGS Roster 071823'].YearofITExperience)
+                Items: =Choices([@'USGS Roster 071823'].'Year of IT Experience')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('USGS Roster 071823'.YearofITExperience,DataCardValue33.SearchText)
+                SearchItems: =Choices('USGS Roster 071823'.'Year of IT Experience',DataCardValue33.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -725,10 +725,10 @@ scrManager As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'USGS Roster 071823'].Tools_x002f_Technologies)
+                Items: =Choices([@'USGS Roster 071823'].'Tools/Technologies')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('USGS Roster 071823'.Tools_x002f_Technologies,DataCardValue34.SearchText)
+                SearchItems: =Choices('USGS Roster 071823'.'Tools/Technologies',DataCardValue34.SearchText)
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -858,10 +858,10 @@ scrManager As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'USGS Roster 071823'].LaptopMake)
+                Items: =Choices([@'USGS Roster 071823'].'Laptop Make')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('USGS Roster 071823'.LaptopMake,DataCardValue36.SearchText)
+                SearchItems: =Choices('USGS Roster 071823'.'Laptop Make',DataCardValue36.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -924,10 +924,10 @@ scrManager As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'USGS Roster 071823'].LaptopModel)
+                Items: =Choices([@'USGS Roster 071823'].'Laptop Model')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('USGS Roster 071823'.LaptopModel,DataCardValue37.SearchText)
+                SearchItems: =Choices('USGS Roster 071823'.'Laptop Model',DataCardValue37.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -1163,7 +1163,7 @@ scrManager As screen:
 
     Button1 As button:
         Height: =32
-        OnSelect: =ExporttoExcel.Run(JSON('USGS Roster 071823',JSONFormat.IncludeBinaryData)
+        OnSelect: =ExporttoExcel.Run(JSON('USGS Roster 071823',JSONFormat.IncludeBinaryData))
         Text: ="Button"
         Width: =152
         X: =1200

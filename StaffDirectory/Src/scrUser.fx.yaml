@@ -513,10 +513,10 @@ scrUser As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'USGS Roster 071823'].field_7)
+                Items: =Choices([@'USGS Roster 071823'].'Task Order Name')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('USGS Roster 071823'.field_7,DataCardValue8.SearchText)
+                SearchItems: =Choices('USGS Roster 071823'.'Task Order Name',DataCardValue8.SearchText)
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -712,10 +712,10 @@ scrUser As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'USGS Roster 071823'].YearofITExperience)
+                Items: =Choices([@'USGS Roster 071823'].'Year of IT Experience')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('USGS Roster 071823'.YearofITExperience,DataCardValue13.SearchText)
+                SearchItems: =Choices('USGS Roster 071823'.'Year of IT Experience',DataCardValue13.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -778,10 +778,10 @@ scrUser As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'USGS Roster 071823'].Tools_x002f_Technologies)
+                Items: =Choices([@'USGS Roster 071823'].'Tools/Technologies')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('USGS Roster 071823'.Tools_x002f_Technologies,DataCardValue14.SearchText)
+                SearchItems: =Choices('USGS Roster 071823'.'Tools/Technologies',DataCardValue14.SearchText)
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -911,10 +911,10 @@ scrUser As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'USGS Roster 071823'].LaptopMake)
+                Items: =Choices([@'USGS Roster 071823'].'Laptop Make')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('USGS Roster 071823'.LaptopMake,DataCardValue16.SearchText)
+                SearchItems: =Choices('USGS Roster 071823'.'Laptop Make',DataCardValue16.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -977,10 +977,10 @@ scrUser As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'USGS Roster 071823'].LaptopModel)
+                Items: =Choices([@'USGS Roster 071823'].'Laptop Model')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('USGS Roster 071823'.LaptopModel,DataCardValue17.SearchText)
+                SearchItems: =Choices('USGS Roster 071823'.'Laptop Model',DataCardValue17.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -1334,7 +1334,7 @@ scrUser As screen:
         Attachments_DataCard1 As typedDataCard.attachmentsEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="{Attachments}"
-            Default: =ThisItem.Attachments
+            Default: =ThisItem.'{Attachments}'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'USGS Roster 071823'],DataSourceInfo.DisplayName,"{Attachments}")
             Fill: =RGBA(0, 0, 0, 0)

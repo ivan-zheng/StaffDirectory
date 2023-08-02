@@ -34,5 +34,31 @@
     "dependencies": {},
     "dependents": [],
     "id": "45d1dcd9-88a7-4380-8344-d6c45bb85cec"
+  },
+  "79f8275c-30b0-4ae4-a342-465619f1799c": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1645/1.0.1645.3345/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "7a6bbb35-8199-4358-bcdd-3752aab1ea4a"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "7a6bbb35-8199-4358-bcdd-3752aab1ea4a"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "ExporttoExcel"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "79f8275c-30b0-4ae4-a342-465619f1799c"
   }
 }

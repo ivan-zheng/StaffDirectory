@@ -3,11 +3,11 @@ scrManager As screen:
     Fill: =RGBA(116, 116, 116, 1)
 
     RemoveButton As button:
-        Height: =33
+        Height: =32
         OnSelect: =Remove('USGS Roster 071823', StaffGallery.Selected)
         Text: ="Remove"
-        Width: =153
-        X: =673
+        Width: =152
+        X: =677
         Y: =645
         ZIndex: =4
 
@@ -64,8 +64,8 @@ scrManager As screen:
         OnSelect: =SubmitForm(Form1)
         Text: ="Update"
         Width: =152
-        X: =1022
-        Y: =642
+        X: =1024
+        Y: =645
         ZIndex: =11
 
     "StaffGallery As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
@@ -1162,10 +1162,11 @@ scrManager As screen:
                 ZIndex: =4
 
     Button1 As button:
-        Height: =36
+        Height: =32
+        OnSelect: =ExporttoExcel.Run(JSON('USGS Roster 071823',JSONFormat.IncludeBinaryData)
         Text: ="Button"
-        Width: =141
-        X: =1211
-        Y: =640
+        Width: =152
+        X: =1200
+        Y: =644
         ZIndex: =14
 

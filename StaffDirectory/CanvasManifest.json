@@ -132,6 +132,7 @@
     "scrManager",
     "scrUser",
     "scrHome",
-    "Branding/Styling"
+    "Branding/Styling",
+    "scrManager_add"
   ]
 }

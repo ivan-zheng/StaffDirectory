@@ -3,6 +3,7 @@ Header As CanvasComponent:
     Fill: =NIS_BLUE
     HeaderTitle: ="Text"
     Height: =72
+    Home: =App.ActiveScreen
     Nav_visible: =true
     Width: =1366
     X: =0
@@ -36,7 +37,7 @@ Header As CanvasComponent:
     Icon1_3 As icon.Home:
         Color: =RGBA(255, 255, 255, 1)
         Icon: =Icon.Home
-        OnSelect: =Navigate(Header.Backnav,ScreenTransition.Fade)
+        OnSelect: =Navigate(Header.Home,ScreenTransition.Fade)
         X: =25
         Y: =4
         ZIndex: =4

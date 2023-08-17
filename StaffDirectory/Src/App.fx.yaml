@@ -2,6 +2,7 @@ App As appinfo:
     BackEnabled: =false
     OnStart: =Set(varUserFullName, User().FullName);
     StartScreen: =
+    Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
         OnCancel: =false
